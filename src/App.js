@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
 
-function App() {
+import AuthContextProvider from "./contexts/authContext";
+import ProductsContextProvider from "./contexts/productsContext";
+import BrandsContextProvider from "./contexts/brandsContext";
+import CartContextProvider from "./contexts/cartContext";
+
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+
+import Routing from "./Routing";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "antd/dist/antd.css";
+import "./App.css";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthContextProvider>
+      <CartContextProvider>
+        <BrandsContextProvider>
+          <ProductsContextProvider>
+            <BrowserRouter>
+              <Header />
+              <Routing />
+              <Footer />
+            </BrowserRouter>
+          </ProductsContextProvider>
+        </BrandsContextProvider>
+      </CartContextProvider>
+    </AuthContextProvider>
   );
-}
+};
 
 export default App;
+
+
+/*
+CRUD
+фильтрация
+пагинация
+поиск
+корзина
+роутинг
+админка
+*/
