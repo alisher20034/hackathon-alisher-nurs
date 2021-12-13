@@ -16,7 +16,8 @@ const Footer = () => {
         </a>
       </div>
       <div className="footer">
-        <div className="foot">
+        
+        <div className="foot-l">
           <h3>ПОКУПАТЕЛЯМ</h3>
           <a style={{ color: "black" }}>Как сделать заказ</a>
           <a style={{ color: "black" }}>Доставка</a>
@@ -24,7 +25,7 @@ const Footer = () => {
           <a style={{ color: "black" }}>Возврат денежных средств</a>
         </div>
 
-        <div className="foot">
+        <div className="foot-w">
           <h3>КОМПАНИЯ</h3>
           <a style={{ color: "black" }}>О нас</a>
           <a style={{ color: "black" }}>Реквизиты</a>
@@ -33,7 +34,7 @@ const Footer = () => {
           <a style={{ color: "black" }}>Вакансии</a>
         </div>
 
-        <div className="foot">
+        <div className="foot-q">
           <h3>ОБРАТНАЯ СВЯЗЬ</h3>
           <a style={{ color: "black" }}>Правила продажи</a>
           <a style={{ color: "black" }}>
@@ -43,7 +44,7 @@ const Footer = () => {
         </div>
 
         <div className="foot">
-          <h3>МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h3>
+          <h3 className="adap">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h3>
           <div className="ins">
             <a>
               <InstagramOutlined />
@@ -64,11 +65,6 @@ const Footer = () => {
         src="https://www.watchesofswitzerland.com/medias/usa-payment-options-group-1121.png?context=bWFzdGVyfHJvb3R8NTA1M3xpbWFnZS9wbmd8aDIwL2hkNS85MTIyMTcxMTI1NzkwLnBuZ3wzZDQ5ZGZhMjc2NjM4MzBlZjZhMjk1NzcyOWEyOGUwYzVjNGZiNzAzZGZmYjQ5Y2U5M2E1MTUxYzU5ZWRmMjVj"
         alt=""
       />
-
-      <span style={{ marginTop: "20%", marginLeft: "4%", }}>
-        2004-2021 © TypyldakStore — модный интернет-магазин одежды.
-        Все права защищены. Доставка по всему Кыргызстану и по России.
-      </span>
       
     </div>
   );
