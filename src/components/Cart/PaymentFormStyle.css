@@ -1,0 +1,18 @@
+#PaymentForm{ 
+    display:flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 50px; 
+    display: grid; 
+     
+     
+} 
+#PaymentInput{ 
+    display: flex; 
+    border-style: groove; 
+    margin-top: 20px; 
+    justify-content: center; 
+    align-items: center; 
+     
+     
+}
