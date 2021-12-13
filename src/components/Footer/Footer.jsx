@@ -65,14 +65,11 @@ const Footer = () => {
         src="https://www.watchesofswitzerland.com/medias/usa-payment-options-group-1121.png?context=bWFzdGVyfHJvb3R8NTA1M3xpbWFnZS9wbmd8aDIwL2hkNS85MTIyMTcxMTI1NzkwLnBuZ3wzZDQ5ZGZhMjc2NjM4MzBlZjZhMjk1NzcyOWEyOGUwYzVjNGZiNzAzZGZmYjQ5Y2U5M2E1MTUxYzU5ZWRmMjVj"
         alt=""
       />
-<<<<<<< HEAD
 
       <span style={{ marginTop: "20%", marginLeft: "4%", }}>
         2004-2021 © TypyldakStore — модный интернет-магазин одежды.
         Все права защищены. Доставка по всему Кыргызстану.
       </span>
-=======
->>>>>>> f2094e657c17b67d4d6e268d5be3bcf3b3b38563
       
     </div>
   );
