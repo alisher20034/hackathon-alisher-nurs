@@ -132,7 +132,7 @@
   
   @media (min-width:0px) and (max-width: 700px) {
     .foot-q{
-        margin-left: 10%;
+        display: none;
     }
   }
 
