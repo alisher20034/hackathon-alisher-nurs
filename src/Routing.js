@@ -10,6 +10,8 @@ import ProductsList from "./components/ProductsList/ProductsList";
 import { useAuth } from "./contexts/authContext";
 import AdminPage from "./pages/AdminPage";
 import Error404 from "./pages/Error404";
+import Invoice from "./components/Cart/Invoice";
+import PaymentForm from "./components/Cart/PaymentForm";
 
 const Routing = () => {
   let PUBLIC_ROUTES = [
@@ -38,6 +40,16 @@ const Routing = () => {
       link: "/cart",
       element: <Cart />,
       id: 6
+    },
+    {
+      link: "/pay",
+      element: <PaymentForm />,
+      id: 7
+    },
+    {
+      link: "/invoice",
+      element: <Invoice />,
+      id: 8
     }
   ];
   const ADMIN_ROUTES = [
