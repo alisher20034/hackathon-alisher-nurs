@@ -1,5 +1,5 @@
 .first-footer {
-    background-image: url('https://lh3.googleusercontent.com/proxy/0e971uDR-mUlQ4PvESLO1JMz7uj-DHRDHQxsY6xM0Avmw5au8NVKH0haw5txjFq6PIO7ZxbIem0BeYAh5f3sS-3d');
+    background-color: red;
     margin-top: 3%;
 }
 
@@ -10,17 +10,17 @@
 }
 @media (max-width: 500px) {
     .first-footer{
-        max-width: 450px;
+        flex-wrap: wrap;
     }
 }
 @media (max-width: 450px) {
     .first-footer{
-        max-width: 400px;
+        flex-wrap: wrap;
     }
 }
 @media (max-width: 350px) {
     .first-footer{
-        max-width: 250px;
+        flex-wrap: wrap;
     }
 }
 
