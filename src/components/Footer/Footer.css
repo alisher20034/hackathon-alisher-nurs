@@ -1,62 +1,87 @@
 .first-footer {
     background-color: red;
     margin-top: 3%;
-}
-
-.footer{
+  }
+  
+  .footer{
     display: flex;
     justify-content: space-around;
     margin-left: -3.7%;
-}
-
-.foot {
+  }
+  
+  .foot {
+    margin-left: 0%;
+    margin-top: 5%;
+    font-size: 15px;
+  }
+  
+  .foot-l{
     margin-left: 10%;
     margin-top: 5%;
     font-size: 15px;
-}
- 
-.foot h3 {
+  }
+  .foot-l h3 {
     font-size: 15px;
-}
-
-a {
+  }
+  .foot-w{
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 15px;
+  }
+  .foot-w h3 {
+    font-size: 15px;
+  }
+  .foot-q{
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 15px;
+  }
+  .foot-q h3 {
+    font-size: 15px;
+  }
+  
+  
+  .foot h3 {
+    font-size: 15px;
+  }
+  
+  a {
     display: flex;
-}
-
-.ins {
+  }
+  
+  .ins {
     display: flex;
     font-size: 30px;
     max-width: 100%;
     width: 250px;
     margin-right: 5%;
     justify-content: space-between;
-}
-
-
-.ins a {
+  }
+  
+  .ins a {
     color: white;
-}
-
-.first-footer img {
+  }
+  
+  .first-footer img {
     margin-top: 1%;
     margin-left: 1%;
     margin-bottom: 3%;
-}
-
-.img2 img{
+  }
+  
+  .img2 img{
     width: 150px;
-}
-
-.img2 {
+  }
+  
+  .img2 {
     display: flex;
     justify-content: space-around;
-}
-
-.footer a {
+  }
+  
+  .footer a {
     margin-top: 10%;
-}
-
-.back a{
+  }
+  
+  .back a{
     background-color: #ececec; 
     display: flex;
     justify-content: center; 
@@ -69,5 +94,50 @@ a {
     font-size: 15px; 
     width: 100%; 
     font-weight: bold;
-}
+  }
+  
+  /* ADAPATIVE */
+  @media (min-width:0px) and (max-width:598px) {
+    .ins{
+        display:none;
+    }
+  }
+  @media (min-width:0px) and (max-width:598px) {
+    .adap{
+        display:none;
+    }
+  }
+  
+  @media (min-width:0px) and (max-width:598px) {
+    .img{
+        display:none;
+    }
+  }
+  
+  
+  
+  
+  @media (min-width:0px) and (max-width:1000px) {
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  }
+  
+  @media (min-width:0px) and (max-width: 700px) {
+    .foot-w{
+        margin-left: 10%;
+    }
+  }
+  
+  @media (min-width:0px) and (max-width: 700px) {
+    .foot-q{
+        margin-left: 10%;
+    }
+  }
 
+  
+  
+  
+  
+  
