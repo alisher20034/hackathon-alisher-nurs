@@ -11,30 +11,32 @@ import Header from "./components/Header/Header";
 
 import Routing from "./Routing";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import "antd/dist/antd.css";
 import "./App.css";
+import FavoritesContextProvider from "./contexts/favoritesContext";
 
 const App = () => {
   return (
     <AuthContextProvider>
-      <CartContextProvider>
-        <BrandsContextProvider>
-          <ProductsContextProvider>
-            <BrowserRouter>
-              <Header />
-              <Routing />
-              <Footer />
-            </BrowserRouter>
-          </ProductsContextProvider>
-        </BrandsContextProvider>
-      </CartContextProvider>
+      <FavoritesContextProvider>
+        <CartContextProvider>
+          <BrandsContextProvider>
+            <ProductsContextProvider>
+              <BrowserRouter>
+                <Header />
+                <Routing />
+                <Footer />
+              </BrowserRouter>
+            </ProductsContextProvider>
+          </BrandsContextProvider>
+        </CartContextProvider>
+      </FavoritesContextProvider>
     </AuthContextProvider>
   );
 };
 
 export default App;
-
 
 /*
 CRUD

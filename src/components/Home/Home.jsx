@@ -64,17 +64,8 @@ const Home = () => {
       </Carousel>
 
       <Tabs defaultActiveKey="1" centered>
-        <TabPane tab="Все" key="1">
+        <TabPane tab="Все товары" key="1">
           <ProductsList />
-        </TabPane>
-        <TabPane tab="Женская" key="2">
-          Женская одежда
-        </TabPane>
-        <TabPane tab="Мужская" key="3">
-          Мужская одежда
-        </TabPane>
-        <TabPane tab="Детская" key="4">
-          Детская одежда
         </TabPane>
       </Tabs>
       <Link

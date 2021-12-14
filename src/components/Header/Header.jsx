@@ -6,7 +6,6 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import InputBase from "@mui/material/InputBase";
 import Badge from "@mui/material/Badge";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
@@ -17,6 +16,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { ButtonBase } from "@mui/material";
 
 import { Button } from "antd";
+import StarIcon from "@mui/icons-material/Star";
 
 import { useAuth } from "../../contexts/authContext";
 
@@ -24,12 +24,17 @@ import LoginModal from "../Auth/LoginModal";
 import AuthModal from "../Auth/AuthModal";
 import { Link } from "react-router-dom";
 import { cartContext } from "../../contexts/cartContext";
-
+import { favoritesContext } from "../../contexts/favoritesContext";
 
 export default function Header() {
   const { getCart, cartLength } = React.useContext(cartContext);
   useEffect(() => {
     getCart();
+  }, []);
+
+  const { getFavorites, favoritesLength } = React.useContext(favoritesContext);
+  useEffect(() => {
+    getFavorites();
   }, []);
 
   const [modalShow, setModalShow] = React.useState(false);
@@ -143,14 +148,12 @@ export default function Header() {
         </IconButton>
         <p>Корзина</p>
       </MenuItem>
-
-
     </Menu>
   );
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" style= {{backgroundColor:"#fd1d1d"}}>
+      <AppBar position="static" style={{ backgroundColor: "#fd1d1d" }}>
         <Toolbar>
           <IconButton
             size="large"
@@ -163,18 +166,31 @@ export default function Header() {
               <MenuIcon />
             </Link>
           </IconButton>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ display: { xs: "none", sm: "block" } }}
-          >
-            Интернет магазин
-          </Typography>
+          <Link style={{textDecoration: "none", color: "white"}} to="/">
+            <Typography
+              variant="h6"
+              noWrap
+              component="div"
+              sx={{ display: { xs: "none", sm: "block" } }}
+            >
+              Интернет магазин
+            </Typography>
+          </Link>
+          <Link style={{ color: "white" }} to="/favorites">
+            <IconButton
+              size="large"
+              aria-label="show 4 new mails"
+              color="inherit"
+            >
+              <Badge badgeContent={+favoritesLength} color="error">
+                <StarIcon />
+              </Badge>
+            </IconButton>
+          </Link>
 
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
-            <Link style={{color: "white"}} to="/cart">
+            <Link style={{ color: "white" }} to="/cart">
               <IconButton
                 size="large"
                 aria-label="show 4 new mails"
@@ -185,15 +201,6 @@ export default function Header() {
                 </Badge>
               </IconButton>
             </Link>
-            {/* <IconButton
-              size="large"
-              aria-label="show 17 new notifications"
-              color="inherit"
-            >
-              <Badge badgeContent={7} color="error">
-                <NotificationsIcon />
-              </Badge>
-            </IconButton> */}
           </Box>
 
           {email ? (

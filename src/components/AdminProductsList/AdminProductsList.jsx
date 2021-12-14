@@ -56,7 +56,7 @@ const AdminProductsList = () => {
               avatar={<Avatar src={item.image1} />}
               title={
                 <a>
-                  {item.brand}, {item.model}
+                  {item.model},{item.brand}
                 </a>
               }
             />

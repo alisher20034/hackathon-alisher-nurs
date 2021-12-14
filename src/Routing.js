@@ -12,6 +12,7 @@ import AdminPage from "./pages/AdminPage";
 import Error404 from "./pages/Error404";
 import Invoice from "./components/Cart/Invoice";
 import PaymentForm from "./components/Cart/PaymentForm";
+import Favorites from "./components/Favorites/Favorites";
 
 const Routing = () => {
   let PUBLIC_ROUTES = [
@@ -50,7 +51,12 @@ const Routing = () => {
       link: "/invoice",
       element: <Invoice />,
       id: 8
-    }
+    },
+    {
+      link: "/favorites",
+      element: <Favorites />,
+      id: 9
+    },
   ];
   const ADMIN_ROUTES = [
     {

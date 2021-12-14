@@ -26,6 +26,7 @@ const reducer = (state = INIT_STATE, action) => {
 
 const CartContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
+  
   function addProductToCart(product) {
     let cart = JSON.parse(localStorage.getItem("cart"));
     if (!cart) {
