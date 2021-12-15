@@ -32,6 +32,9 @@ const Filters = ({ brand, setBrand, price, setPrice }) => {
         max={1000}
         step={100}
       />
+      <h6>
+        Фильтрация по цене
+      </h6>
     </div>
   );
 };

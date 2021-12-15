@@ -50,6 +50,7 @@ const FavoritesItem = ({ item }) => {
               Удалить с избранных
             </Button>
             <Button
+              style={{marginLeft: "1%"}}
               onClick={() => {
                 addProductToCart(item.item);
                 setCheckInCart(checkItemInCart(id));
