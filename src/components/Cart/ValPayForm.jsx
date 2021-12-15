@@ -105,11 +105,18 @@ const ValPayForm = () => {
           />
         </Form.Item>
 
-        <Form.Item name="cvc" label="CVC" rules={[{ required: true }]}>
+        <Form.Item
+          name="cvc"
+          label="CVC"
+          rules={[
+            { required: true },
+          ]}
+        >
           <Input
             type="number"
             name="cvc"
             placeholder="CVC"
+            maxLength={3}
             onChange={handleInputChange}
             onFocus={handleInputFocus}
           />
