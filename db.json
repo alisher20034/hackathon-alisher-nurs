@@ -22,7 +22,7 @@
     },
     {
       "brand": "Tommy Hilfiger",
-      "model": "Джинсовки",
+      "model": "Джинсы",
       "description": "Мужская джинсовая куртка из 100% хлопка MODIS. Модель средней длины, прямого кроя, с круглой горловиной и отложным воротничком. Отлично подойдет для создания стильного образа.",
       "price": 139,
       "image1": "https://image.freepik.com/free-photo/clothes-hang_1339-2013.jpg",
@@ -145,15 +145,6 @@
       "id": 25
     },
     {
-      "brand": "Adidas",
-      "model": "Кеды",
-      "description": "Информация о технических характеристиках, комплекте поставки, стране изготовления и внешнем виде товара носит справочный характер и основывается на последних доступных сведениях от продавца",
-      "price": 399,
-      "image1": "https://image.freepik.com/free-photo/black-white-shoes-white-background_187538-73.jpg",
-      "image2": "https://image.freepik.com/free-photo/black-white-shoes-white-background_187538-73.jpg",
-      "id": 26
-    },
-    {
       "brand": "Makers",
       "model": "Худи",
       "description": "Мейкерс худи 100% хлопок",
@@ -161,6 +152,15 @@
       "image1": "https://studio.makers.kg/assets/images/about/kuba.jpg",
       "image2": "https://studio.makers.kg/assets/images/about/kuba.jpg",
       "id": 27
+    },
+    {
+      "brand": "Polo",
+      "model": "Безрукавка",
+      "description": "J.Payer / Безрукавка: Утепленный пуховый жилет",
+      "price": 39,
+      "image1": "https://image.freepik.com/free-vector/black-sleeveless-puffer-jacket-down-vest-mockup_107791-1608.jpg",
+      "image2": "https://image.freepik.com/free-vector/safety-vest-front-side-back-view-orange-sleeveless-jacket-with-reflective-stripes-road-works_107791-6492.jpg",
+      "id": 28
     }
   ],
   "brands": [

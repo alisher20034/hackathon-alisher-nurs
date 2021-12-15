@@ -13,6 +13,7 @@ import Error404 from "./pages/Error404";
 import Invoice from "./components/Cart/Invoice";
 import Favorites from "./components/Favorites/Favorites";
 import ValPayForm from "./components/Cart/ValPayForm";
+import Comments from "./components/comments/Comments";
 
 const Routing = () => {
   let PUBLIC_ROUTES = [
@@ -56,6 +57,11 @@ const Routing = () => {
       link: "/favorites",
       element: <Favorites />,
       id: 9
+    },
+    {
+      link: "/comments",
+      element: <Comments />,
+      id: 10
     },
   ];
   const ADMIN_ROUTES = [

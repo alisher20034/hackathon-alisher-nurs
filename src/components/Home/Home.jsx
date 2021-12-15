@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Carousel } from "react-bootstrap";
-import { Tabs } from "antd";
+import { Button, Tabs } from "antd";
 import ProductsList from "../ProductsList/ProductsList";
 import BrandsListContainer from "./BrandsListContainer";
 import { Link } from "react-router-dom";
+import { MessageOutlined } from "@ant-design/icons";
 
 const Home = () => {
   const { TabPane } = Tabs;
@@ -73,14 +74,26 @@ const Home = () => {
           textDecoration: "none",
           display: "flex",
           justifyContent: "center",
-          marginTop: "3%"
+          marginTop: "3%",
         }}
         to="/brands"
       >
-        <h5>ПОПУЛЯРНЫЕ БРЕНДЫ</h5>
+        <Button type="primary" ghost>
+          ПОПУЛЯРНЫЕ БРЕНДЫ
+        </Button>
       </Link>
-
       <BrandsListContainer />
+      <Link to="/comments">
+        <Button
+          style={{ marginLeft: "46%", marginTop: "3%" }}
+          type="primary"
+          shape="round"
+          icon={<MessageOutlined />}
+          size="large"
+        >
+          Отзывы
+        </Button>
+      </Link>
     </>
   );
 };
